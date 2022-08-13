@@ -1,0 +1,5 @@
+https://archlinux.org/mirrorlist/
+
+reflector --save mirrorlist --country us --score 10
+
+

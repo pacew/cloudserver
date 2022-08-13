@@ -1,0 +1,8 @@
+#! /bin/bash
+
+apache2ctl start
+
+while true
+do
+  bash
+done

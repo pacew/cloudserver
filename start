@@ -1,0 +1,23 @@
+#! /bin/bash
+
+image=cloudserver:dev
+
+uid_gid=`id -u`:`id -g`
+
+docker run \
+       --net=host \
+       --ipc=host \
+       --hostname container \
+       --cidfile=server.cid \
+       -d \
+       -it \
+       $image \
+       /startup
+
+
+#       bash -c 'while true; do bash; done'       
+
+
+
+
+

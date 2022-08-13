@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ -r server.cid ]
+then
+    docker kill `cat server.cid`
+    rm -f server.cid
+fi
+
